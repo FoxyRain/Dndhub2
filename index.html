@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>🎲 D&D Hub</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="topbar">
+    <h1>🎲 D&D Hub</h1>
+
+    <nav class="tabs">
+      <button class="tab active" data-tab="home">Главная</button>
+      <button class="tab" data-tab="campaigns">Кампании</button>
+      <button class="tab" data-tab="maps">Карты</button>
+      <button class="tab" data-tab="tools">Инструменты</button>
+    </nav>
+  </header>
+
+  <main class="content">
+    <!-- Главная страница -->
+    <section id="home" class="panel visible">
+      <h2>Добро пожаловать в D&D Hub</h2>
+      <p>
+        Это сайт-хаб для игры в D&D. Здесь будут кампании, карты,
+        инструменты мастера и полезные утилиты для настольных ролевых игр.
+      </p>
+
+      <div class="cards">
+        <div class="card">
+          <h3>📜 Кампании</h3>
+          <p>Список кампаний, заметки, персонажи и квесты. Отслеживайте прогресс и управляйте приключениями.</p>
+        </div>
+
+        <div class="card">
+          <h3>🗺️ Карты</h3>
+          <p>Просмотр карт миров, подземелий и локаций с возможностью добавления меток.</p>
+        </div>
+
+        <div class="card">
+          <h3>🎯 Инструменты</h3>
+          <p>Броски кубиков, трекер инициативы, генераторы персонажей, имен и лута.</p>
+        </div>
+      </div>
+
+      <div class="welcome-note">
+        <h3>📝 Как пользоваться</h3>
+        <ul>
+          <li>Используйте вкладки сверху для навигации</li>
+          <li>Данные сохраняются в вашем браузере</li>
+          <li>Всё работает офлайн после загрузки</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Страница кампаний -->
+    <section id="campaigns" class="panel hidden">
+      <h2>📜 Кампании</h2>
+      <p>Список всех D&D кампаний. Статусы: 🟢 Активна, 🔵 Завершена, 🟡 Запланирована.</p>
+
+      <div id="campaigns-list" class="campaigns-list">
+        <p class="loading">Загрузка кампаний...</p>
+      </div>
+    </section>
+
+    <!-- Страница карт -->
+    <section id="maps" class="panel hidden">
+      <h2>🗺️ Карты</h2>
+      <p>Здесь будет раздел с картами. Это мы сделаем позже.</p>
+    </section>
+
+    <!-- Страница инструментов -->
+    <section id="tools" class="panel hidden">
+      <h2>🎯 Инструменты</h2>
+      <p>Здесь будут кубики, трекер инициативы и генераторы.</p>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>🎲 D&D Hub — проект для настольных ролевых игр</p>
+  </footer>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
